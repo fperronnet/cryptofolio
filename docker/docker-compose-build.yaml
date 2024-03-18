@@ -11,7 +11,7 @@ services:
       dockerfile: src/Cryptofolio.Api/Dockerfile
       args:
         - VERSION=$API_VERSION
-    image: ${REGISTRY:-registry.digitalocean.com/cryptofolio}/${API_REPOSITORY:-api}:${API_TAG:-latest}
+    image: ${REGISTRY:-ghcr.io/fescoffier/cryptofolio}/${API_REPOSITORY:-api}:${API_TAG:-latest}
 
   cryptofolio-app:
     build:
@@ -20,7 +20,7 @@ services:
       dockerfile: src/Cryptofolio.App/Dockerfile
       args:
         - VERSION=$APP_VERSION
-    image: ${REGISTRY:-registry.digitalocean.com/cryptofolio}/${APP_REPOSITORY:-app}:${APP_TAG:-latest}
+    image: ${REGISTRY:-ghcr.io/fescoffier/cryptofolio}/${APP_REPOSITORY:-app}:${APP_TAG:-latest}
 
   cryptofolio-job-collector:
     build:
@@ -29,7 +29,7 @@ services:
       dockerfile: src/Cryptofolio.Collector.Job/Dockerfile
       args:
         - VERSION=$JOB_COLLECTOR_VERSION
-    image: ${REGISTRY:-registry.digitalocean.com/cryptofolio}/${JOB_COLLECTOR_REPOSITORY:-jobs/collector}:${JOB_COLLECTOR_TAG:-latest}
+    image: ${REGISTRY:-ghcr.io/fescoffier/cryptofolio}/${JOB_COLLECTOR_REPOSITORY:-jobs/collector}:${JOB_COLLECTOR_TAG:-latest}
 
   cryptofolio-job-handlers:
     build:
@@ -38,7 +38,7 @@ services:
       dockerfile: src/Cryptofolio.Handlers.Job/Dockerfile
       args:
         - VERSION=$JOB_HANDLERS_VERSION
-    image: ${REGISTRY:-registry.digitalocean.com/cryptofolio}/${JOB_HANDLERS_REPOSITORY:-jobs/handlers}:${JOB_HANDLERS_TAG:-latest}
+    image: ${REGISTRY:-ghcr.io/fescoffier/cryptofolio}/${JOB_HANDLERS_REPOSITORY:-jobs/handlers}:${JOB_HANDLERS_TAG:-latest}
 
   cryptofolio-job-balances:
     build:
@@ -47,4 +47,4 @@ services:
       dockerfile: src/Cryptofolio.Balances.Job/Dockerfile
       args:
         - VERSION=$JOB_BALANCES_VERSION
-    image: ${REGISTRY:-registry.digitalocean.com/cryptofolio}/${JOB_BALANCES_REPOSITORY:-jobs/balances}:${JOB_BALANCES_TAG:-latest}
+    image: ${REGISTRY:-ghcr.io/fescoffier/cryptofolio}/${JOB_BALANCES_REPOSITORY:-jobs/balances}:${JOB_BALANCES_TAG:-latest}

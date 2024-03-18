@@ -9,12 +9,13 @@ It was initially designed for the [GLG204](https://formation.cnam.fr/rechercher-
 
 ## ⚙️ Tools
 
-To run this application locally you'll need the [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0#sdk-5.0.400), [NodeJS](https://nodejs.org/en/) and [Docker](https://www.docker.com/products/docker-desktop) with the [docker-compose CLI](https://docs.docker.com/compose/).
+To run this application locally you'll need the [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0#sdk-5.0.408), [NodeJS](https://nodejs.org/en/) and [Docker](https://www.docker.com/products/docker-desktop) with the [docker-compose CLI](https://docs.docker.com/compose/).
 
 To build the application for a production deployment, you'll need [Docker](https://www.docker.com/products/docker-desktop) with the [docker-compose CLI](https://docs.docker.com/compose/).
 
 
 To deploy the application to a production environment, you'll need [Helm](https://helm.sh) and a running [Kubernetes](https://kubernetes.io) cluster.
+
 ## 🚀 Running the project
 
 The simpliest way to run the application is by using the `run.sh` script.
